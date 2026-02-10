@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnerkPlus - Energía Natural para tu Día</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: transparent;">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-bolt"></i> EnerkPlus
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#benefits">Beneficios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#how-to-use">Cómo Usar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Equipo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content" data-aos="fade-right">
+                    <h1 class="hero-title">Energía Natural para tu Día</h1>
+                    <p class="hero-subtitle">Descubre el poder del gel energizante que transformará tu rendimiento
+                        físico y mental. 100% natural, 0% químicos.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#products" class="btn btn-primary-custom">Comprar Ahora</a>
+                        <a href="#about" class="btn btn-outline-custom">Conoce Más</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-image" data-aos="fade-left">
+                    <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Gel Container -->
+                        <defs>
+                            <linearGradient id="gelGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#F7931E;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="bottleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+                                <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:0.9" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Bottle -->
+                        <rect x="120" y="150" width="160" height="300" rx="20" fill="url(#bottleGradient)" stroke="#ccc"
+                            stroke-width="2" />
+                        <!-- Cap -->
+                        <rect x="150" y="120" width="100" height="40" rx="10" fill="#2C3E50" />
+                        <!-- Gel inside -->
+                        <rect x="130" y="200" width="140" height="230" rx="15" fill="url(#gelGradient)" opacity="0.8" />
+                        <!-- Label -->
+                        <rect x="140" y="280" width="120" height="80" rx="8" fill="#ffffff" opacity="0.9" />
+                        <text x="200" y="310" text-anchor="middle" font-size="20" font-weight="bold"
+                            fill="#FF6B35">ENERGY</text>
+                        <text x="200" y="335" text-anchor="middle" font-size="16" fill="#2C3E50">GEL PRO</text>
+                        <text x="200" y="355" text-anchor="middle" font-size="12" fill="#7F8C8D">100% Natural</text>
+                        <!-- Shine effect -->
+                        <ellipse cx="160" cy="220" rx="30" ry="80" fill="#ffffff" opacity="0.3" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Sobre EnerkPlus</h2>
+                <p class="section-subtitle">Innovación natural para tu bienestar</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="about-image">
+                        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="600" height="400" fill="#f8f9fa" />
+                            <circle cx="150" cy="200" r="80" fill="#FF6B35" opacity="0.3" />
+                            <circle cx="300" cy="200" r="100" fill="#F7931E" opacity="0.4" />
+                            <circle cx="450" cy="200" r="80" fill="#27AE60" opacity="0.3" />
+                            <text x="300" y="180" text-anchor="middle" font-size="40" font-weight="bold"
+                                fill="#2C3E50">100%</text>
+                            <text x="300" y="220" text-anchor="middle" font-size="24" fill="#2C3E50">Natural</text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h3 class="mb-4">La Energía Natural que tu Cuerpo Merece</h3>
+                    <p class="mb-3">EnerkPlus nace de la pasión por crear productos que realmente mejoren la calidad
+                        de vida de las personas. Nuestro gel energizante está formulado con ingredientes 100% naturales,
+                        cuidadosamente seleccionados para brindarte la energía que necesitas sin comprometer tu salud.
+                    </p>
+                    <p class="mb-4">Con más de 5 años de investigación y desarrollo, hemos logrado la fórmula perfecta
+                        que combina eficacia, sabor y beneficios nutricionales en un solo producto.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Ingredientes 100%
+                            naturales</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Sin azúcares añadidos
+                        </li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Absorción rápida</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Certificación orgánica
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Beneficios Clave</h2>
+                <p class="section-subtitle">Todo lo que necesitas en un solo producto</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4 class="benefit-title">Energía Inmediata</h4>
+                        <p>Siente el impulso de energía en minutos. Perfecto para antes de entrenar o cuando más lo
+                            necesites.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4 class="benefit-title">Claridad Mental</h4>
+                        <p>Mejora tu concentración y enfoque. Ideal para estudio, trabajo y actividades que requieren
+                            atención.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4 class="benefit-title">Salud Natural</h4>
+                        <p>Ingredientes orgánicos que cuidan tu bienestar. Sin químicos artificiales ni efectos
+                            secundarios.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <h4 class="benefit-title">Rendimiento</h4>
+                        <p>Mejora tu desempeño físico y mental. Perfecto para atletas y profesionales exigentes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Nuestros Productos</h2>
+                <p class="section-subtitle">Elige el que mejor se adapte a tus necesidades</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="product-card">
+                        <div class="product-image"
+                            style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span class="product-badge">Popular</span>
+                            <svg width="200" height="250" viewBox="0 0 200 250">
+                                <rect x="60" y="50" width="80" height="150" rx="10" fill="#ffffff" opacity="0.9" />
+                                <rect x="75" y="40" width="50" height="20" rx="5" fill="#2C3E50" />
+                                <rect x="70" y="80" width="60" height="100" rx="8" fill="#667eea" opacity="0.8" />
+                            </svg>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Classic Energy</h3>
+                            <div class="product-price">$299 MXN</div>
+                            <ul class="product-features">
+                                <li><i class="fas fa-check"></i> 250ml de energía pura</li>
+                                <li><i class="fas fa-check"></i> Sabor frutas tropicales</li>
+                                <li><i class="fas fa-check"></i> 4-6 horas de energía</li>
+                                <li><i class="fas fa-check"></i> Vitaminas B6 y B12</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary-custom w-100">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="product-card">
+                        <div class="product-image"
+                            style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <span class="product-badge">Nuevo</span>
+                            <svg width="200" height="250" viewBox="0 0 200 250">
+                                <rect x="60" y="50" width="80" height="150" rx="10" fill="#ffffff" opacity="0.9" />
+                                <rect x="75" y="40" width="50" height="20" rx="5" fill="#2C3E50" />
+                                <rect x="70" y="80" width="60" height="100" rx="8" fill="#f5576c" opacity="0.8" />
+                            </svg>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Pro Performance</h3>
+                            <div class="product-price">$449 MXN</div>
+                            <ul class="product-features">
+                                <li><i class="fas fa-check"></i> 350ml fórmula avanzada</li>
+                                <li><i class="fas fa-check"></i> Sabor berry blast</li>
+                                <li><i class="fas fa-check"></i> 6-8 horas de energía</li>
+                                <li><i class="fas fa-check"></i> Complejo vitamínico completo</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary-custom w-100">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="product-card">
+                        <div class="product-image"
+                            style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <span class="product-badge">Recomendado</span>
+                            <svg width="200" height="250" viewBox="0 0 200 250">
+                                <rect x="60" y="50" width="80" height="150" rx="10" fill="#ffffff" opacity="0.9" />
+                                <rect x="75" y="40" width="50" height="20" rx="5" fill="#2C3E50" />
+                                <rect x="70" y="80" width="60" height="100" rx="8" fill="#00f2fe" opacity="0.8" />
+                            </svg>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Sport Extreme</h3>
+                            <div class="product-price">$549 MXN</div>
+                            <ul class="product-features">
+                                <li><i class="fas fa-check"></i> 500ml máxima potencia</li>
+                                <li><i class="fas fa-check"></i> Sabor citrus power</li>
+                                <li><i class="fas fa-check"></i> 8-10 horas de energía</li>
+                                <li><i class="fas fa-check"></i> Electrolitos + Cafeína natural</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary-custom w-100">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Use Section -->
+    <section id="how-to-use" class="how-to-use-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Cómo Usar EnerkPlus</h2>
+                <p class="section-subtitle">Sigue estos simples pasos para obtener máximos resultados</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h4 class="step-title">Agita Bien</h4>
+                        <p>Agita el envase durante 5 segundos para mezclar todos los ingredientes naturales.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h4 class="step-title">Toma la Dosis</h4>
+                        <p>Consume 30ml (un shot) 15-20 minutos antes de tu actividad física o mental.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h4 class="step-title">Hidrátate</h4>
+                        <p>Bebe agua antes y después de consumir el gel para una mejor absorción.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h4 class="step-title">Disfruta</h4>
+                        <p>Siente la energía natural fluyendo. ¡Listo para conquistar tu día!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title text-white">Lo Que Dicen Nuestros Clientes</h2>
+                <p class="section-subtitle text-white opacity-75">Miles de personas ya confían en EnerkPlus</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Increíble producto! Lo uso antes de mis entrenamientos y la
+                            diferencia es notable. Me siento con más energía y resistencia. 100% recomendado."</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">MR</div>
+                            <div class="author-info">
+                                <h5>María Rodríguez</h5>
+                                <p>Atleta Profesional</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Como estudiante, necesitaba algo que me ayudara a mantener la
+                            concentración. EnerkPlus es perfecto, me mantiene enfocado sin nerviosismo."</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">CG</div>
+                            <div class="author-info">
+                                <h5>Carlos García</h5>
+                                <p>Estudiante Universitario</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Lo mejor es que es 100% natural. No me da el bajón de energía que
+                            otros productos me causaban. Es parte esencial de mi rutina diaria."</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">AL</div>
+                            <div class="author-info">
+                                <h5>Ana López</h5>
+                                <p>Ejecutiva de Marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Nuestro Equipo</h2>
+                <p class="section-subtitle">Las mentes detrás de EnerkPlus</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-member">
+                        <div class="team-image">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="team-name">Dr. Roberto Martínez</h4>
+                        <p class="team-role">Director de Investigación</p>
+                        <p>Nutriólogo especializado en suplementación deportiva con más de 15 años de experiencia.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-member">
+                        <div class="team-image">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="team-name">Dra. Laura Sánchez</h4>
+                        <p class="team-role">Química Principal</p>
+                        <p>Experta en formulación de productos naturales y desarrollo de suplementos orgánicos.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-member">
+                        <div class="team-image">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="team-name">Miguel Hernández</h4>
+                        <p class="team-role">Director de Operaciones</p>
+                        <p>Especialista en producción y control de calidad con certificaciones internacionales.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="team-member">
+                        <div class="team-image">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="team-name">Sofía Ramírez</h4>
+                        <p class="team-role">Directora de Marketing</p>
+                        <p>Estratega digital con pasión por conectar productos innovadores con las personas.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                <p class="section-subtitle">Resolvemos tus dudas</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+                                    ¿Cuánto tiempo antes debo tomar EnerkPlus?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Te recomendamos consumir EnerkPlus entre 15-20 minutos antes de tu actividad
+                                    física o mental. Esto permite que los nutrientes se absorban adecuadamente y
+                                    comiences a sentir los efectos justo cuando los necesitas.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+                                    ¿Es seguro consumirlo todos los días?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    ¡Absolutamente! EnerkPlus está formulado con ingredientes 100% naturales y es
+                                    completamente seguro para el consumo diario. Sin embargo, recomendamos no exceder
+                                    las 2-3 dosis diarias y mantener una alimentación balanceada.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3">
+                                    ¿Tiene efectos secundarios?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    EnerkPlus no contiene químicos artificiales ni estimulantes agresivos, por lo
+                                    que no produce los efectos secundarios típicos de otras bebidas energéticas. Sin
+                                    embargo, si tienes alguna condición médica, consulta con tu médico antes de
+                                    consumirlo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq4">
+                                    ¿Cuánto dura el efecto?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Dependiendo del producto que elijas, los efectos pueden durar entre 4-10 horas. El
+                                    Classic Energy dura 4-6 horas, el Pro Performance 6-8 horas, y el Sport Extreme
+                                    hasta 8-10 horas de energía sostenida.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq5">
+                                    ¿Puedo combinarlo con otros suplementos?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sí, EnerkPlus puede combinarse con otros suplementos naturales. Sin embargo,
+                                    evita combinarlo con otros productos con alta concentración de cafeína. Si tienes
+                                    dudas sobre alguna combinación específica, contáctanos.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title text-white">Contáctanos</h2>
+                <p class="section-subtitle text-white opacity-75">Estamos aquí para ayudarte</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-aos="fade-right">
+                    <div class="contact-info">
+                        <h3 class="mb-4">Información de Contacto</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h5>Dirección</h5>
+                                <p>Av. Revolución 1234<br>Col. Centro, CDMX</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h5>Teléfono</h5>
+                                <p>+52 55 1234 5678<br>+52 55 8765 4321</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h5>Email</h5>
+                                <p>info@energygelpro.com<br>ventas@energygelpro.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8" data-aos="fade-left">
+                    <div class="contact-form">
+                        <h3 class="mb-4">Envíanos un Mensaje</h3>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Nombre completo" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control" placeholder="Teléfono">
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-control">
+                                        <option>Asunto</option>
+                                        <option>Consulta de Producto</option>
+                                        <option>Pedido Mayoreo</option>
+                                        <option>Soporte Técnico</option>
+                                        <option>Otro</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="5" placeholder="Tu mensaje"
+                                        required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary-custom w-100">Enviar Mensaje</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="footer-title">EnerkPlus</h3>
+                    <p class="mb-3">Tu fuente de energía natural para un estilo de vida activo y saludable.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="footer-title">Enlaces</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#about">Sobre Nosotros</a></li>
+                        <li><a href="#products">Productos</a></li>
+                        <li><a href="#testimonials">Testimonios</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="footer-title">Productos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Classic Energy</a></li>
+                        <li><a href="#">Pro Performance</a></li>
+                        <li><a href="#">Sport Extreme</a></li>
+                        <li><a href="#">Paquetes</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="footer-title">Soporte</h4>
+                    <ul class="footer-links">
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                        <li><a href="#">Envíos</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2024 EnerkPlus. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+
+</body>
+<!-- AOS Animation JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/main.js"></script>
+
+</html>
